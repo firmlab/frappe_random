@@ -68,11 +68,16 @@ bench get-app --branch=version-13 erpnext
 
 #-- Before creating new site you may need to configure the host (in this case where using frappe_docker installation), you need to run command below:
 #-- bench set-mariadb-host mariadb
+#--
+#-- but there's a bug in bench CLI that can't run command above, so you have to alter the config manually in common_site_config.json
+#--
+#-- after that you can run command below
+#--
 #-- bench set-redis-cache-host redis-cache:6379
 #-- bench set-redis-queue-host redis-queue:6379
 #-- bench set-redis-socketio-host redis-socketio:6379
-#--
-#-- but there's a bug in bench CLI that can't run command above, so you have to alter the config manually in common_site_config.json
+#-- 
+#-- and done, now you can start create a new site!
 
 
 # CREATE NEW SITE
