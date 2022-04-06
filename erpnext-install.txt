@@ -1,0 +1,5 @@
+# To install erpnext version 13 run command below
+# this command make sure you're pulling the correct version of erpnext.
+# do note that you have to make sure your installation of frappe must have the same version (version 13 in this case)
+
+bench get-app --branch version-13 https://github.com/frappe/erpnext.git
